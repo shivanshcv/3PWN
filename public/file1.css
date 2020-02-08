@@ -1,0 +1,30 @@
+#hover{
+  border-radius:5px;
+}
+#hover:hover{
+  background:lightgray;
+  color:black;
+}
+.myclass{
+  width: 25%;
+margin: auto;
+background: white;
+height: 500px;
+border-radius: 8px;
+box-shadow: 0 0 10px 8px gray;
+}
+h2{
+width:200px;
+margin:auto;
+margin-left:130px;
+}
+body{
+  height: 760px;
+background:linear-gradient(rgb(255,255,255),rgba(49, 199, 44));
+}
+form{
+      padding: 10px;
+}
+#topnav{
+      background: rgba(49, 199, 44,0.4);
+}
