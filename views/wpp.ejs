@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<style>
+  #hover{
+    border-radius:5px;
+  }
+  #hover:hover{
+    background:lightgray;
+    color:black;
+  }
+  h2 {
+    width: 100%;
+    margin-left: 20px;
+  }
+  #jumbo{
+    width: 50%;
+    margin: 60px 80px 100px 70px;
+    background: rgba(49, 199, 44,0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 5px 5px rgba(49, 199, 44,0.2);
+  }
+  body{
+  background:white;
+  height: 760px;
+  }
+  #topnav{
+        background: rgba(49, 199, 44,0.4);
+  }
+  #btn{
+    width: 50%;
+    margin-left: 43%;
+  }
+  button:hover{
+    background:gray;
+    color:black;
+  }
+  #flex{
+    height:200px;
+    margin-left: 20px;
+    background: white;
+    padding: 1%;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow:0 0 1px 1px rgba(49, 199, 44,0.3);
+
+  }
+
+
+
+
+</style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar" id="topnav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">3PWM</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a  href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="login-p.html">Orders</a></li>
+            <li><a href="login-c.html">Settings</a></li>
+            <li><a href="login-r.html">Log Out</a></li>
+          </ul>
+        </li>
+        </ul>
+  </div>
+</nav>
+
+<div class="d-flex flex-column mb-3" ng-app="" ng-init='items= <%- result %>'>
+  <h2>Your Orders</h2>
+  <br>
+   <div class="p-2 " id="flex" ng-repeat="item in items">
+     <div id="{{item._id}}">Waste Type:
+       {{item.inputType}}
+       <br>
+       Address :
+       {{item.address1}}, {{item.address2}}
+     <br>
+     City: {{item.inputCity}}
+     <br>
+     State: {{item.inputState}}
+     <br>
+     Date: {{item.inputDate}}
+     <br>
+     Repeat : {{item.schedule}}
+     <br>Accepted by :
+     {{item.wca}}
+     <br>
+     <a href="/wcpt/{{item._id}}"><button type="button" name="button">Accept</button></a>
+   </div></div>
+
+ </div>
+
+
+  </body>
+</html>

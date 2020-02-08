@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+a{
+  color:lightgray;
+  font-size: 17px;
+}
+a:hover,li:hover{
+  background: #838e9e;
+  color: black;
+  border-radius: 8px;
+}
+  #jumbo{
+    background:rgba(5, 22, 48,0.4);
+    text-align: center;
+    margin-top:200px;
+  }
+  #jumboo{
+    background:rgba(5, 22, 48,0.4);
+    text-align: center;
+    margin-top:100px;
+  }
+  body{
+  background:#051630;
+  height: 760px;
+  color: white;
+  }
+
+  }
+
+  #tt{
+    height: 80%;
+  }
+  #ttt{
+    height: 80%;
+  }
+  #abt{
+    display: none;
+    margin-top: 100px;
+  }
+  #gl{
+    margin-top: 50px;
+    display: block;
+width: 10px;
+margin-left: 740px;
+height: 100px;
+}
+
+
+
+
+</style>
+  </head>
+  <body>
+    <div id="topnav">
+    <nav class="navbar navbar navbar-fixed-top" id="topnav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">3PWM</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a id="456">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" style="font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;">
+      <li>
+       <a href="/signup"><span class="glyphicon glyphicon-user"></span>SignUp
+      </a>
+     </li>
+       <li>
+          <a href="/signin"><span class="glyphicon glyphicon-log-in"></span>SignIn
+          </a>
+
+        </li>
+        </ul>
+  </div>
+</nav>
+</div>
+<div id="tt">
+<div class="jumbotron" id="jumbo">
+  <h1 class="display-4">3-Phases of Waste Management</h1>
+  <p class="lead">A platform where 3 phases of waste management meet to achieve sustainability</p>
+  <hr class="my-4">
+  <p></p>
+  <a class="btn btn-primary btn-lg" href="#" role="button" id="lrnbtn">Learn more</a>
+</div>
+</div>
+<div id="abt">
+
+  <span id="gl" class="glyphicon glyphicon-menu-up"></span>
+  <div id="ttt">
+  <div class="jumbotron" id="jumboo">
+    <h1 class="display-4">3-Phases of Waste Management</h1>
+    <p class="lead">A platform where 3 phases of waste management meet to achieve sustainability</p>
+    <hr class="my-4">
+    <p></p>
+
+  </div>
+  </div>
+
+
+
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#lrnbtn").click(function(){
+    console.log("sdfhsd");
+    $("#tt").slideToggle(1000);
+    $("#abt").slideToggle(1000);
+
+  });
+  $("#gl").click(function(){
+    $("#tt").slideToggle(1000);
+    $("#abt").slideToggle(1000);
+  });
+  $("#456").click(function(){
+    $("#abt").show(1000);
+    $("#tt").hide(1000);
+  })
+});
+
+</script>
+  </body>
+</html>

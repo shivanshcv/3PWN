@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<style>
+a{
+  color:lightgray;
+  font-size: 17px;
+}
+a:hover,li:hover{
+  opacity:0.9;
+  color: black;
+  border-radius: 8px;
+}
+  #jumbo{
+    background:rgba(5, 22, 48,0.4);
+    text-align: center;
+    margin-top:200px;
+  }
+  body{
+  background:#051630;
+  height: 760px;
+  color: white;
+  }
+
+  }
+
+  #tt{
+    height: 80%;
+  }
+  #abt{
+    display: none;
+    margin-top: 100px;
+  }
+  #gl{
+    margin-top: 50px;
+    display: block;
+width: 100%;
+margin-left: 720px;
+height: 100px;
+}
+h2{
+  width: 100%;
+    margin-top: 75px;
+
+}
+.my a{
+  color:white;
+}
+
+#myclass{
+  display:none;
+  width:20%;
+  margin:auto;
+  padding:10px;
+  margin-top:50px;
+  background:white;
+  height:450px;
+  color:black;
+  border-radius:8px;
+  box-shadow:0 0 2px 2px white;
+}
+#myclass2{
+  display:none;
+  width:20%;
+  margin:auto;
+  padding:10px;
+  margin-top:50px;
+  background:white;
+  height:450px;
+  color:black;
+  border-radius:8px;
+  box-shadow:0 0 2px 2px white;
+}
+#myclass3{
+  display:none;
+  width:20%;
+  margin:auto;
+  padding:10px;
+  margin-top:50px;
+  background:white;
+  height:450px;
+  color:black;
+  border-radius:8px;
+  box-shadow:0 0 2px 2px white;
+
+
+}
+label{
+  font-size:15px;
+
+}
+
+
+
+
+</style>
+  </head>
+  <body>
+    <div id="topnav">
+    <nav class="navbar navbar navbar-fixed-top" id="topnav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">3PWM</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a  href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <!-- <ul class="nav navbar-nav navbar-right">
+      <li>
+       <a href="#>"<span class="glyphicon glyphicon-user"></span>SignUp
+      </a>
+     </li>
+       <li>
+          <a href="#"><span class="glyphicon glyphicon-log-in"></span>Login
+          </a>
+
+        </li>
+        </ul> -->
+  </div>
+</nav>
+</div>
+<h2><h2>
+<div class="my">
+
+
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item">
+      <a class="nav-link " id="1" href="#">Producer</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="2" href="#">Collector</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="3" href="#">Recycler</a>
+    </li>
+  </ul>
+</div>
+<div class="myclass" id="myclass">
+<form method="post" action="/wpl">
+  <br>
+  <h3>Login</h3>
+  <br>
+<div class="form-group">
+<label for="exampleInputEmail1">Email address</label>
+<input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1" name="pass">Password</label>
+<input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+<div class="myclass" id="myclass2">
+<form method="post" action="/wcl"><br>
+  <br>
+  <h3>Login</h3>
+  <br>
+<div class="form-group">
+<label for="exampleInputEmail1">Email address</label>
+<input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1" name="pass">Password</label>
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="pass">
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+<div class="myclass" id="myclass3">
+<form method="post" action="/wrl"><br>
+  <br>
+  <h3>Login</h3>
+  <br>
+<div class="form-group">
+<label for="exampleInputEmail1">Email address</label>
+<input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1" name="pass">Password</label>
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $("#1").click(function(){
+
+      $("#myclass2").hide(1000);
+      $("#myclass").show(1000);
+      $("#myclass3").hide(1000);
+
+
+
+
+    })
+    $("#2").click(function(){
+      $("#myclass").hide(1000);
+      $("#myclass2").show(1000);
+      $("#myclass3").hide(1000);
+    })
+    $("#3").click(function(){
+      $("#myclass").hide(1000);
+      $("#myclass3").show(1000);
+      $("#myclass2").hide(1000);
+    })
+  });
+
+</script>
+
+  </body>
+</html>
